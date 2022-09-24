@@ -4,15 +4,17 @@
   "description": "一个node的spa应用的demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-serve webpack.config.js",
+    "build": "webpack-cli"
   },
   "author": "jianhongli",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.5",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "connect-history-api-fallback": "^2.0.0",
     "css-loader": "^4.3.0",
     "eslint": "^7.32.0",
     "eslint-config-enough": "^0.7.0",
@@ -20,11 +22,12 @@
     "file-loader": "^6.2.0",
     "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.2",
+    "koa-connect": "^2.1.0",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.10.0",
-    "webpack-serve": "^4.0.0"
+    "webpack-serve": "0.3.1"
   },
   "eslintConfig": {
     "extends": "enough",
