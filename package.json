@@ -1,0 +1,24 @@
+{
+  "name": "spa-helloworld",
+  "version": "1.0.0",
+  "description": "一个node的spa应用的demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jianhongli",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-enough": "^0.7.0",
+    "eslint-loader": "^4.0.2"
+  },
+  "eslintConfig": {
+    "extends": "enough",
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+}
